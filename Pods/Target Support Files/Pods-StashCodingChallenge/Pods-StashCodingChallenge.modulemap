@@ -1,0 +1,6 @@
+framework module Pods_StashCodingChallenge {
+  umbrella header "Pods-StashCodingChallenge-umbrella.h"
+
+  export *
+  module * { export * }
+}

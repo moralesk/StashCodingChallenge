@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20FF729A5DBE412D17591FCA /* Pods_StashCodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE30FEBF5065D16228DAB177 /* Pods_StashCodingChallenge.framework */; };
+		C939DE08223425A500DC5B43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C939DE07223425A500DC5B43 /* AppDelegate.swift */; };
+		C939DE0A223425A500DC5B43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C939DE09223425A500DC5B43 /* ViewController.swift */; };
+		C939DE0D223425A500DC5B43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C939DE0B223425A500DC5B43 /* Main.storyboard */; };
+		C939DE0F223425A600DC5B43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C939DE0E223425A600DC5B43 /* Assets.xcassets */; };
+		C939DE12223425A600DC5B43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C939DE10223425A600DC5B43 /* LaunchScreen.storyboard */; };
+		C939DE1D223425A700DC5B43 /* StashCodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C939DE1C223425A700DC5B43 /* StashCodingChallengeTests.swift */; };
+		C939DE282234265200DC5B43 /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = C939DE272234265200DC5B43 /* achievements.json */; };
+		C939DE2A223428B800DC5B43 /* AchievementEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C939DE29223428B800DC5B43 /* AchievementEntity.swift */; };
+		C939DE2C2234685400DC5B43 /* AchievementsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C939DE2B2234685400DC5B43 /* AchievementsRouter.swift */; };
+		C939DE2E223469C800DC5B43 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C939DE2D223469C800DC5B43 /* AchievementsViewController.swift */; };
+		C939DE3022346CA500DC5B43 /* AchievementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C939DE2F22346CA500DC5B43 /* AchievementTableViewCell.swift */; };
+		C939DE3222346D2B00DC5B43 /* AchievementsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C939DE3122346D2B00DC5B43 /* AchievementsProtocols.swift */; };
+		C939DE342234742000DC5B43 /* AchievementsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C939DE332234742000DC5B43 /* AchievementsInteractor.swift */; };
+		C939DE36223474E300DC5B43 /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C939DE35223474E300DC5B43 /* AchievementsPresenter.swift */; };
+		C939DE382237506E00DC5B43 /* AchievementLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C939DE372237506E00DC5B43 /* AchievementLevelView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C939DE19223425A700DC5B43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C939DDFC223425A500DC5B43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C939DE03223425A500DC5B43;
+			remoteInfo = StashCodingChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6A6B642E82228E0EA08652CC /* Pods-StashCodingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashCodingChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-StashCodingChallenge/Pods-StashCodingChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		B00F09986CE78F138F62F470 /* Pods-StashCodingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashCodingChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StashCodingChallenge/Pods-StashCodingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		C939DE04223425A500DC5B43 /* StashCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StashCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C939DE07223425A500DC5B43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C939DE09223425A500DC5B43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C939DE0C223425A500DC5B43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C939DE0E223425A600DC5B43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C939DE11223425A600DC5B43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C939DE13223425A700DC5B43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C939DE18223425A700DC5B43 /* StashCodingChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashCodingChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C939DE1C223425A700DC5B43 /* StashCodingChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCodingChallengeTests.swift; sourceTree = "<group>"; };
+		C939DE1E223425A700DC5B43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C939DE272234265200DC5B43 /* achievements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achievements.json; sourceTree = "<group>"; };
+		C939DE29223428B800DC5B43 /* AchievementEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementEntity.swift; sourceTree = "<group>"; };
+		C939DE2B2234685400DC5B43 /* AchievementsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsRouter.swift; sourceTree = "<group>"; };
+		C939DE2D223469C800DC5B43 /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
+		C939DE2F22346CA500DC5B43 /* AchievementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementTableViewCell.swift; sourceTree = "<group>"; };
+		C939DE3122346D2B00DC5B43 /* AchievementsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsProtocols.swift; sourceTree = "<group>"; };
+		C939DE332234742000DC5B43 /* AchievementsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractor.swift; sourceTree = "<group>"; };
+		C939DE35223474E300DC5B43 /* AchievementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsPresenter.swift; sourceTree = "<group>"; };
+		C939DE372237506E00DC5B43 /* AchievementLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementLevelView.swift; sourceTree = "<group>"; };
+		CE30FEBF5065D16228DAB177 /* Pods_StashCodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StashCodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C939DE01223425A500DC5B43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20FF729A5DBE412D17591FCA /* Pods_StashCodingChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C939DE15223425A700DC5B43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC9C61ED1805998F89C9BF26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B00F09986CE78F138F62F470 /* Pods-StashCodingChallenge.debug.xcconfig */,
+				6A6B642E82228E0EA08652CC /* Pods-StashCodingChallenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C939DDFB223425A500DC5B43 = {
+			isa = PBXGroup;
+			children = (
+				C939DE06223425A500DC5B43 /* StashCodingChallenge */,
+				C939DE1B223425A700DC5B43 /* StashCodingChallengeTests */,
+				C939DE05223425A500DC5B43 /* Products */,
+				AC9C61ED1805998F89C9BF26 /* Pods */,
+				E4A4417D07D6BEB41712C403 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C939DE05223425A500DC5B43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C939DE04223425A500DC5B43 /* StashCodingChallenge.app */,
+				C939DE18223425A700DC5B43 /* StashCodingChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C939DE06223425A500DC5B43 /* StashCodingChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				C939DE272234265200DC5B43 /* achievements.json */,
+				C939DE07223425A500DC5B43 /* AppDelegate.swift */,
+				C939DE09223425A500DC5B43 /* ViewController.swift */,
+				C939DE0B223425A500DC5B43 /* Main.storyboard */,
+				C939DE0E223425A600DC5B43 /* Assets.xcassets */,
+				C939DE10223425A600DC5B43 /* LaunchScreen.storyboard */,
+				C939DE13223425A700DC5B43 /* Info.plist */,
+				C939DE29223428B800DC5B43 /* AchievementEntity.swift */,
+				C939DE332234742000DC5B43 /* AchievementsInteractor.swift */,
+				C939DE372237506E00DC5B43 /* AchievementLevelView.swift */,
+				C939DE35223474E300DC5B43 /* AchievementsPresenter.swift */,
+				C939DE3122346D2B00DC5B43 /* AchievementsProtocols.swift */,
+				C939DE2B2234685400DC5B43 /* AchievementsRouter.swift */,
+				C939DE2F22346CA500DC5B43 /* AchievementTableViewCell.swift */,
+				C939DE2D223469C800DC5B43 /* AchievementsViewController.swift */,
+			);
+			path = StashCodingChallenge;
+			sourceTree = "<group>";
+		};
+		C939DE1B223425A700DC5B43 /* StashCodingChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C939DE1C223425A700DC5B43 /* StashCodingChallengeTests.swift */,
+				C939DE1E223425A700DC5B43 /* Info.plist */,
+			);
+			path = StashCodingChallengeTests;
+			sourceTree = "<group>";
+		};
+		E4A4417D07D6BEB41712C403 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE30FEBF5065D16228DAB177 /* Pods_StashCodingChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C939DE03223425A500DC5B43 /* StashCodingChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C939DE21223425A700DC5B43 /* Build configuration list for PBXNativeTarget "StashCodingChallenge" */;
+			buildPhases = (
+				63359ABA6AFA97F44EBD9CD0 /* [CP] Check Pods Manifest.lock */,
+				C939DE00223425A500DC5B43 /* Sources */,
+				C939DE01223425A500DC5B43 /* Frameworks */,
+				C939DE02223425A500DC5B43 /* Resources */,
+				3FA9087AB9E79869B8842131 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StashCodingChallenge;
+			productName = StashCodingChallenge;
+			productReference = C939DE04223425A500DC5B43 /* StashCodingChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C939DE17223425A700DC5B43 /* StashCodingChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C939DE24223425A700DC5B43 /* Build configuration list for PBXNativeTarget "StashCodingChallengeTests" */;
+			buildPhases = (
+				C939DE14223425A700DC5B43 /* Sources */,
+				C939DE15223425A700DC5B43 /* Frameworks */,
+				C939DE16223425A700DC5B43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C939DE1A223425A700DC5B43 /* PBXTargetDependency */,
+			);
+			name = StashCodingChallengeTests;
+			productName = StashCodingChallengeTests;
+			productReference = C939DE18223425A700DC5B43 /* StashCodingChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C939DDFC223425A500DC5B43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Kelly Morales";
+				TargetAttributes = {
+					C939DE03223425A500DC5B43 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					C939DE17223425A700DC5B43 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C939DE03223425A500DC5B43;
+					};
+				};
+			};
+			buildConfigurationList = C939DDFF223425A500DC5B43 /* Build configuration list for PBXProject "StashCodingChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C939DDFB223425A500DC5B43;
+			productRefGroup = C939DE05223425A500DC5B43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C939DE03223425A500DC5B43 /* StashCodingChallenge */,
+				C939DE17223425A700DC5B43 /* StashCodingChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C939DE02223425A500DC5B43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C939DE12223425A600DC5B43 /* LaunchScreen.storyboard in Resources */,
+				C939DE282234265200DC5B43 /* achievements.json in Resources */,
+				C939DE0F223425A600DC5B43 /* Assets.xcassets in Resources */,
+				C939DE0D223425A500DC5B43 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C939DE16223425A700DC5B43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FA9087AB9E79869B8842131 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StashCodingChallenge/Pods-StashCodingChallenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StashCodingChallenge/Pods-StashCodingChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63359ABA6AFA97F44EBD9CD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StashCodingChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C939DE00223425A500DC5B43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C939DE2C2234685400DC5B43 /* AchievementsRouter.swift in Sources */,
+				C939DE382237506E00DC5B43 /* AchievementLevelView.swift in Sources */,
+				C939DE3022346CA500DC5B43 /* AchievementTableViewCell.swift in Sources */,
+				C939DE0A223425A500DC5B43 /* ViewController.swift in Sources */,
+				C939DE36223474E300DC5B43 /* AchievementsPresenter.swift in Sources */,
+				C939DE08223425A500DC5B43 /* AppDelegate.swift in Sources */,
+				C939DE3222346D2B00DC5B43 /* AchievementsProtocols.swift in Sources */,
+				C939DE2A223428B800DC5B43 /* AchievementEntity.swift in Sources */,
+				C939DE342234742000DC5B43 /* AchievementsInteractor.swift in Sources */,
+				C939DE2E223469C800DC5B43 /* AchievementsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C939DE14223425A700DC5B43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C939DE1D223425A700DC5B43 /* StashCodingChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C939DE1A223425A700DC5B43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C939DE03223425A500DC5B43 /* StashCodingChallenge */;
+			targetProxy = C939DE19223425A700DC5B43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C939DE0B223425A500DC5B43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C939DE0C223425A500DC5B43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C939DE10223425A600DC5B43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C939DE11223425A600DC5B43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C939DE1F223425A700DC5B43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C939DE20223425A700DC5B43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C939DE22223425A700DC5B43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B00F09986CE78F138F62F470 /* Pods-StashCodingChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3945CAPSN;
+				INFOPLIST_FILE = StashCodingChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KellyMorales.StashCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C939DE23223425A700DC5B43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A6B642E82228E0EA08652CC /* Pods-StashCodingChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3945CAPSN;
+				INFOPLIST_FILE = StashCodingChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KellyMorales.StashCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C939DE25223425A700DC5B43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3945CAPSN;
+				INFOPLIST_FILE = StashCodingChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KellyMorales.StashCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StashCodingChallenge.app/StashCodingChallenge";
+			};
+			name = Debug;
+		};
+		C939DE26223425A700DC5B43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3945CAPSN;
+				INFOPLIST_FILE = StashCodingChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KellyMorales.StashCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StashCodingChallenge.app/StashCodingChallenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C939DDFF223425A500DC5B43 /* Build configuration list for PBXProject "StashCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C939DE1F223425A700DC5B43 /* Debug */,
+				C939DE20223425A700DC5B43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C939DE21223425A700DC5B43 /* Build configuration list for PBXNativeTarget "StashCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C939DE22223425A700DC5B43 /* Debug */,
+				C939DE23223425A700DC5B43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C939DE24223425A700DC5B43 /* Build configuration list for PBXNativeTarget "StashCodingChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C939DE25223425A700DC5B43 /* Debug */,
+				C939DE26223425A700DC5B43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C939DDFC223425A500DC5B43 /* Project object */;
+}
